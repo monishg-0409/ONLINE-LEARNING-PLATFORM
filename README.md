@@ -57,4 +57,5 @@ Clone the repository: git clone <repository_url>
 Install dependencies: npm install or yarn install
 Start the development server: npm start or yarn start
 
-1
+OUTPUT:
+![Image](https://github.com/user-attachments/assets/54a9a98c-fcf4-4df1-bcf2-f100cca80c9a)
