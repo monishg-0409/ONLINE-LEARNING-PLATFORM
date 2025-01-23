@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Mastermind</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <!-- Welcome Screen -->
+    <div id="welcome-screen">
+      <h1><strong>Welcome to Quiz Mastermind</strong></h1>
+      <br>
+      <br>
+      <h2>Instructions:</h2>
+      <div id="instructions-box">
+        <p>1) Choose a category to start the quiz.</p>
+        <p>2) Answer each question by selecting one option.</p>
+        <p>3) Click "Next" to move to the next question.</p>
+        <p>4) For the final question, click "Submit" to see your score.</p>
+        <p>5) After completing the quiz, click "Check Answers" to review your answers.</p>
+      </div>
+      <br>
+      <h2>Choose a Quiz</h2>
+      <br>
+      <div class="quiz-grid">
+        <div class="quiz-card" data-category="general">
+          <img src="general-quiz.jpeg" alt="General Knowledge Quiz" />
+          <h3>General Knowledge</h3>
+        </div>
+        <div class="quiz-card" data-category="animals">
+          <img src="animals-quiz.jpeg" alt="Animals Quiz" />
+          <h3>Animals</h3>
+        </div>
+        <div class="quiz-card" data-category="computers">
+          <img src="computers-quiz.jpeg" alt="Computers Quiz" />
+          <h3>Computers</h3>
+        </div>
+        <div class="quiz-card" data-category="fruits">
+          <img src="fruits-quiz.jpeg" alt="Fruits Quiz" />
+          <h3>Fruits</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" style="display: none;">
+      <h1 id="question-title"></h1>
+      <div id="timer">Time left: <span id="time">30</span> seconds</div>
+      <ul id="options-list"></ul>
+      <button id="nextBtn" style="display: none;">Next</button>
+      <button id="submitBtn" style="display: none;">Submit</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" style="display: none;">
+      <h1>Your Score</h1>
+      <p id="score-text"></p>
+      <p id="badge-text"></p>
+      <button id="checkBtn">Check Answers</button>
+      <button onclick="location.reload()">Restart Quiz</button>
+    </div>
+
+    <!-- Answers Review Screen -->
+    <div id="review-screen" style="display: none;">
+      <h1>Review Your Answers</h1>
+      <ul id="review-list"></ul>
+      <button onclick="location.reload()">Play Again</button>
+    </div>
+  
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
